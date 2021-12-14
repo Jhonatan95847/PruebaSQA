@@ -12,6 +12,8 @@ public class Date_Test {
 	private WebDriver driver;
 	DateTest registeradd;
 	
+	//Abrir el navegador en la direccion de la web que se va atestear
+	
 	@BeforeMethod
 	public void setUp() throws Exception {
 		registeradd = new DateTest(driver);
