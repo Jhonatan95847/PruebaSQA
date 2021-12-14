@@ -12,13 +12,16 @@ public class Register_test {
 	private WebDriver driver;
 	RegisterAdd registeradd;
 	
+	//Abrir el navegador en la direccion de la web que se va atestear
+	
 	@BeforeMethod
-	public void setUp() throws Exception {
+	public void setUp() throws Exception {       
 		registeradd = new RegisterAdd(driver);
 		driver = registeradd.chromeDriverConnection();
 		registeradd.visit("https://demoqa.com/"); //webtables
 	}
 
+	
 	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.quit();
